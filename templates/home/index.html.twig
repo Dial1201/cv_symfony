@@ -1,0 +1,218 @@
+{% extends "base.html.twig" %}
+
+{% block masthead %}
+	<header class="masthead bg-dark text-white text-center">
+		<div
+			class="container d-flex align-items-center flex-column">
+			<!-- Masthead Avatar Image-->
+			<div class="aos-item" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+				<img class="masthead-avatar mb-5" src="{{asset('assets/img/issa.jpg')}}" alt="issa-diallo"/>
+			</div>
+			<!-- Masthead Heading-->
+			<div class="aos-item" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+				<h1 class="masthead-heading text-uppercase mb-0">
+					<span class="typedTitle"></span>
+				</h1>
+			</div>
+			<!-- Icon Divider-->
+			<div class="divider-custom divider-light">
+				<div class="divider-custom-line"></div>
+				<div class="aos-item" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+					<div class="divider-custom-icon">
+						<i class="fas fa-laptop-code"></i>
+					</div>
+				</div>
+				<div class="divider-custom-line"></div>
+			</div>
+			<!-- Masthead Subheading-->
+			<p class="masthead-subheading font-weight-light mb-0">
+				<span class="typed"></span>
+			</p>
+
+			<!-- About Section Button-->
+			<div class="text-center mt-4">
+				<div class="aos-item" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+					<a class="btn btn-xl btn-outline-light" href="{{asset('assets/issaDiallo.pdf')}}" target="_blank" rel="noopener noreferrer">
+						<i class="fas fa-download me-2"></i>
+						Télécharger cv
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+{% endblock %}
+
+{% block portfolio %}
+	<section class="page-section portfolio" id="portfolio">
+		<div
+			class="container">
+			<!-- Portfolio Section Heading-->
+			<div class="aos-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+				<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">portfolio</h2>
+				<!-- Icon Divider-->
+				<div class="divider-custom">
+					<div class="divider-custom-line"></div>
+					<div class="divider-custom-icon">
+						<i class="fab fa-wordpress"></i>
+						<i class="fab fa-php"></i>
+						<i class="fab fa-js"></i>
+						<i class="fab fa-symfony"></i>
+					</div>
+					<div class="divider-custom-line"></div>
+				</div>
+			</div>
+			<!-- Portfolio Grid Items-->
+			<div
+				class="row justify-content-center">
+				<!-- Portfolio Item 1-->
+				<div class="col-md-6 col-lg-4 mb-5">
+					<a href="https://www.jubba.fr/" target="_blank" rel="noopener noreferrer">
+						<div class="aos-item" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+							<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+								<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+									<div class="portfolio-item-caption-content text-center text-white">
+										<i class="fas fa-lock-open fa-3x"></i>
+									</div>
+								</div>
+								<a href="https://www.jubba.fr/" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="assets/img/portfolio/jubbaAgency.png" alt="jubba agency"/></a>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- Portfolio Item 2-->
+				<div class="col-md-6 col-lg-4 mb-5">
+					<a href="https://bodyaddiction.fr/" target="_blank" rel="noopener noreferrer">
+						<div class="aos-item" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+							<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+								<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+									<div class="portfolio-item-caption-content text-center text-white">
+										<i class="fas fa-lock-open fa-3x"></i>
+									</div>
+								</div>
+								<a href="https://bodyaddiction.fr/" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="assets/img/portfolio/addict.png" alt="body addiction"/></a>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- Portfolio Item 3-->
+				<div class="col-md-6 col-lg-4 mb-5">
+					<a href="https://www.valentimaurice.fr/" target="_blank" rel="noopener noreferrer">
+						<div class="aos-item" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+							<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+								<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+									<div class="portfolio-item-caption-content text-center text-white">
+										<i class="fas fa-lock-open fa-3x"></i>
+									</div>
+								</div>
+								<a href="https://www.valentimaurice.fr/" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="assets/img/portfolio/valenti.jpg" alt="maurice valenti"/></a>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- Portfolio Item 4-->
+				<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+					<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+						<div class="aos-item" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+								<div class="portfolio-item-caption-content text-center text-white">
+									<i class="fas fa-lock fa-3x"></i>
+								</div>
+							</div>
+							<img class="img-fluid" src="assets/img/portfolio/lbsuisse.png" alt="laboutiquesuisse"/>
+						</div>
+					</div>
+				</div>
+
+				<!-- Portfolio Item 5-->
+				<div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+					<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+						<div class="aos-item" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+								<div class="portfolio-item-caption-content text-center text-white">
+									<i class="fas fa-lock fa-3x"></i>
+								</div>
+							</div>
+							<img class="img-fluid" src="assets/img/portfolio/d-or.png" alt="cercle immobilier"/>
+						</div>
+					</div>
+				</div>
+
+				<!-- Portfolio Item 6-->
+				<div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+					<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+						<div class="aos-item" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+								<div class="portfolio-item-caption-content text-center text-white">
+									<i class="fas fa-lock fa-3x"></i>
+								</div>
+							</div>
+							<img class="img-fluid" src="assets/img/portfolio/sport.png" alt="cercle immobilier"/>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+{% endblock %}
+
+{% block about %}
+	<!-- About Section-->
+	<section class="page-section bg-primary text-white mb-0" id="about">
+		<div
+			class="container">
+			<!-- About Section Heading-->
+			<div class="aos-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+				<h2 class="page-section-heading text-center text-uppercase text-white">Certification</h2>
+			</div>
+			<!-- Icon Divider-->
+			<div class="aos-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+				<div class="divider-custom divider-light">
+					<div class="divider-custom-line"></div>
+					<div class="divider-custom-icon">
+						<i class="fas fa-university"></i>
+					</div>
+					<div class="divider-custom-line"></div>
+				</div>
+			</div>
+			<!-- About Section Content-->
+			<div class="row">
+				<div class="col-lg-4 ms-auto">
+					<div class="aos-item" data-aos="fade-up-right" data-aos-easing="ease-out-cubic" data-aos-duration="1250">
+						<div class="text-center mt-4">
+							<a class="btn btn-xl btn-outline-light" href="{{asset('assets/wordpressCertificat.pdf')}}" target="_blank" rel="noopener noreferrer">
+								<i class="fas fa-download me-2"></i>
+								Wordpress!
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 me-auto">
+					<div class="aos-item" data-aos="fade-up-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+						<div class="text-center mt-4">
+							<a class="btn btn-xl btn-outline-light" href="{{asset('assets/prepFullStack.pdf')}}" target="_blank" rel="noopener noreferrer">
+								<i class="fas fa-download me-2"></i>
+								FullStack!
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="aos-item" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+				<div class="text-center mt-4">
+					<a class="btn btn-xl btn-outline-light" href="{{asset('assets/phpMysqlCertificat.pdf')}}" target="_blank" rel="noopener noreferrer">
+						<i class="fas fa-download me-2"></i>
+						PHP/Mysql!
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}
